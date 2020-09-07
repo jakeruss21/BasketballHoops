@@ -32,11 +32,13 @@ namespace BasketballHoops
             Console.Write("{0}'s defensive prowess: ", playerName);
             defense = Utility.DoubleErrorHandler(100);
 
-            Console.Write("{0}'s rebound percentage: ");
+            Console.Write("{0}'s rebound percentage: ", playerName);
             rebound = Utility.DoubleErrorHandler(100);
 
-            Console.Write("{0}'s ball handling skills: ");
+            Console.Write("{0}'s ball handling skills: ", playerName);
             ballHandling = Utility.DoubleErrorHandler(100);
+
+            Console.WriteLine();
             
         }
 

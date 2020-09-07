@@ -27,7 +27,7 @@ namespace BasketballHoops
             Task.Delay(1000).Wait();
             Console.Clear();
 
-            Console.WriteLine("Let's start with the {0} team!", team1);
+            Console.WriteLine("Let's start with the {0} team!", team1.teamName);
 
             Player[] team1Players =
             {
@@ -45,8 +45,9 @@ namespace BasketballHoops
                 Console.WriteLine(team1Players[i].playerName);
             }
 
+            Task.Delay(5000).Wait();
             Console.Clear();
-            Console.WriteLine("Time for the {0} team to create its players!", teamName2);
+            Console.WriteLine("Time for the {0} team to create its players!", team2.teamName);
 
             Player[] team2Players =
             {
