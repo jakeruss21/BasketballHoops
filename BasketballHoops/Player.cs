@@ -7,25 +7,38 @@ namespace BasketballHoops
     class Player
     {
         public string playerName = "";
+        public string playerTeam = "";
         public double shotProf = 0;
         public double defense = 0;
         public double rebound = 0;
         public double ballHandling = 0;
+
 
         public Player()
         {
 
         }
 
-        public Player (string iPlayerName = "", double iShotProf = 0, double iDefense = 0, double iRebound = 0, double iBallHandling = 0)
+        public Player (string iPlayerTeam)
         {
-            playerName = iPlayerName;
-            shotProf = iShotProf;
-            defense = iDefense;
-            rebound = iRebound;
-            ballHandling = iBallHandling;
-        }
+            playerTeam = iPlayerTeam;
 
+            Console.Write("Player Name: ");
+            playerName = Console.ReadLine();
+
+            Console.Write("{0}'s shooting percentage: ", playerName);
+            shotProf = Utility.DoubleErrorHandler(100);
+
+            Console.Write("{0}'s defensive prowess: ", playerName);
+            defense = Utility.DoubleErrorHandler(100);
+
+            Console.Write("{0}'s rebound percentage: ");
+            rebound = Utility.DoubleErrorHandler(100);
+
+            Console.Write("{0}'s ball handling skills: ");
+            ballHandling = Utility.DoubleErrorHandler(100);
+            
+        }
 
     }
 }
